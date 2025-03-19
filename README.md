@@ -10,9 +10,8 @@ name: Test E2E
 
 on:
   push:
-    branches-ignore:
-      - experimental/**
-      - master
+    branches:
+      - develop
   pull_request:
     branches-ignore:
       - experimental/**
