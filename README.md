@@ -6,7 +6,7 @@ Composite GitHub Action to run Playwright tests for a brdgm.me application.
 Usage example:
 
 ```yaml
-name: test-e2e
+name: Test Playwright
 
 on:
   push:
