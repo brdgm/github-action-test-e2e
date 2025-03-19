@@ -1,0 +1,28 @@
+name: Test Playwright
+description: Composite GitHub Action to run Playwright tests for a brdgm.me application.
+
+runs:
+  using: composite
+
+  steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        cache: npm
+
+    - run: npm ci
+      shell: bash
+
+    - run: npm run build
+      shell: bash
+
+    - run: npm run test:e2e
+      shell: bash
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
