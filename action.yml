@@ -1,5 +1,5 @@
-name: Test Playwright
-description: Composite GitHub Action to run Playwright tests for a brdgm.me application.
+name: Test E2E
+description: Composite GitHub Action to run E2E tests (Playwright) for a brdgm.me application.
 
 runs:
   using: composite

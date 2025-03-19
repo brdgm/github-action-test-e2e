@@ -1,12 +1,12 @@
 github-action-test-e2e
 ======
 
-Composite GitHub Action to run Playwright tests for a brdgm.me application.
+Composite GitHub Action to run E2E tests (Playwright) for a brdgm.me application.
 
 Usage example:
 
 ```yaml
-name: Test Playwright
+name: Test E2E
 
 on:
   push:
